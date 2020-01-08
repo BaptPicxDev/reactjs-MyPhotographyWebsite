@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 class MyFooter extends Component{
 	constructor(){
@@ -11,9 +11,10 @@ class MyFooter extends Component{
 	}
 	render(){
 		return(
-			<div>
-				<Navbar bg="light" fixed="bottom">
-					<p>Footer</p>	
+			<div className="footer">
+				<Navbar fluid="True" bg="light" fixed="bottom">
+					<Nav>{this.state.email}</Nav>
+					<Nav className="ml-auto"><i>{this.state.copyright}</i></Nav>	
 				</Navbar>	    
 			</div>
 		);

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Navbar } from 'react-bootstrap';
 
 class MyFooter extends Component{
 	constructor(){
@@ -11,7 +12,9 @@ class MyFooter extends Component{
 	render(){
 		return(
 			<div>
-				Footer		    
+				<Navbar bg="light" fixed="bottom">
+					<p>Footer</p>	
+				</Navbar>	    
 			</div>
 		);
 	}

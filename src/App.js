@@ -6,7 +6,7 @@ import MyFooter from "./components/MyFooter";
 function App() {
   return (
     <div className="App">
-      <MyHeader />  
+      <MyHeader />
       <MyFooter />
     </div>
   );

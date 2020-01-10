@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
+import ImageGallery from './ImageGallery'
 
 class Home extends Component{
+	constructor(){
+		super();
+	}
 	render(){
 		return(
 			<div>
-				<p>Home Page</p>
+				<ImageGallery />
+				<hr />
 			</div>
 		);
 	}
